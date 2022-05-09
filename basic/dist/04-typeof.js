@@ -24,3 +24,15 @@ function printAll(strings) {
         // ...
     }
 }
+var k1 = true;
+function func1() {
+    return {
+        x: 10,
+        y: 20
+    };
+}
+// J: { x: number, y: number }
+var j1 = {
+    x: 1,
+    y: 1
+};

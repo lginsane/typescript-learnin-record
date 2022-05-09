@@ -27,4 +27,29 @@ fn1.description = 'description'
 doSomething(fn1)
 
 
-// 构造签名
+// 构造签名 (调用签名加new)
+class Ctor {
+    s: string
+    constructor(s: string) {
+        this.s = s
+    }
+}
+type SomeConstructor = {
+    new (s: string): Ctor
+}
+
+function fn(ctor: SomeConstructor) {
+    return new ctor('hello')
+}
+const f = fn(Ctor)
+console.log(f.s) // hello
+
+interface callOrConstructor {
+    new (s:string): Date
+    (n: number): number
+}
+function fn11(data: callOrConstructor) {
+    let d = new data('2022-05-08')
+    let n = data(100)
+}
+

@@ -20,3 +20,22 @@ function printAll(strings: string | string[] | null) {
         // ...
     }
 }
+
+// ReturnType<T>
+type Predicate = (x: unknown) => boolean
+type K = ReturnType<Predicate>
+let k1: K = true
+
+function func1() {
+    return {
+        x: 10,
+        y: 20
+    }
+}
+
+type J = ReturnType<typeof func1>
+// J: { x: number, y: number }
+let j1: J = {
+    x: 1,
+    y: 1
+}

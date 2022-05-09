@@ -1,5 +1,8 @@
 "use strict";
-// 交叉类型
+var cc = {
+    color: '',
+    radius: 1
+};
 // 联合类型
 var union = 1;
 union = '';

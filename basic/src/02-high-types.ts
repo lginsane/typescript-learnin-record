@@ -1,4 +1,15 @@
 // 交叉类型
+interface Colorful {
+    color: string
+}
+interface Circle {
+    radius: number
+}
+type ColorfulCircle = Colorful & Circle
+let cc: ColorfulCircle = {
+    color: '',
+    radius: 1
+}
 
 // 联合类型
 let union: number | string = 1

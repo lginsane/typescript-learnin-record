@@ -13,7 +13,7 @@ var n = null;
 // undefined
 var un = undefined;
 // void
-function fn() { }
+function func() { }
 // 元组Tuple
 var t = [0, ''];
 // 枚举enum
@@ -37,3 +37,9 @@ var strLength1 = someValue.length;
 var strLength2 = someValue.length; // 推荐
 // 唯一类型symbol
 var firstName = Symbol('name');
+// unknown 任意值 和 any 类似，不同的是unknown无法操作
+function safeParse(s) {
+    return JSON.parse(s);
+}
+var obj = safeParse(JSON.stringify([1]));
+// obj.join('-') // 报错， 无法操作unknown类型的值
