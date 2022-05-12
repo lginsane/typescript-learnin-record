@@ -1,9 +1,9 @@
-生成配置文件
-tsc --init
+# 基础篇
 
-自动编译
-tsc --watch
-
-配置tsconfig.json
-"outDir": "./dist"
-"rootDir": "./src"
+- 常见类型
+- 类型缩小
+- 函数
+- 对象类型
+- 类型操作
+- 类
+- 模块
