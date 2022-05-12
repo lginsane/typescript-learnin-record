@@ -11,9 +11,8 @@ function createLabel(nameOrId) {
         };
     }
 }
-// ❌
-// function createLabel(id: number): IDLabel
-// function createLabel(name: string): NameLabel
-// function createLabel(nameOrId: number | string): IDLabel | NameLabel {
-// return 
-// }
+// let dogContent: DogMessageContent = 'error' // 报错
+var dogContent = 'error';
+var sOrN1 = [1, 2];
+var sOrN2 = ['1', '2'];
+var sOrN4 = ['1', 2];
